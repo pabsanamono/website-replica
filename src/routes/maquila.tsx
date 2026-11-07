@@ -266,7 +266,7 @@ function Maquila() {
 </label>
 <div className="grid grid-cols-1 gap-2 pt-1">
 <label className="flex items-center gap-3 p-3 rounded-lg bg-surface hover:bg-surface-container transition-colors cursor-pointer">
-<input checked="" className="w-4 h-4 accent-primary" name="volumen" type="radio" defaultValue="500-2000" />
+<input defaultChecked className="w-4 h-4 accent-primary" name="volumen" type="radio" defaultValue="500-2000" />
 <div className="flex flex-col min-w-0">
 <span className="font-label-md text-label-md text-on-surface font-semibold">500 L a 2,000 L / mes</span>
 <span className="font-body-sm text-[12px] text-on-surface-variant">Lote inicial de introducción y distribución regional</span>
