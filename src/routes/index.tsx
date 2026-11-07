@@ -43,7 +43,7 @@ function Index() {
         });
         b.classList.remove("bg-surface-container-high", "text-on-surface-variant");
         b.classList.add("bg-primary", "text-on-primary");
-        mult = mults[b.dataset.sector ?? "hotel"] ?? 12;
+        mult = mults[b.dataset["sector"] ?? "hotel"] ?? 12;
         update();
       }),
     );
