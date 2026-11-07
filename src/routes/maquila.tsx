@@ -293,7 +293,7 @@ function Maquila() {
 <label className="font-label-sm text-label-sm text-on-surface-variant font-medium" htmlFor="detalles">
             Detalles Específicos o Requisitos de Envase
           </label>
-<textarea className="w-full p-3 bg-surface rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest transition-all" id="detalles" placeholder="Indique si requiere envases propios, etiquetas o apoyo regulatorio adicional..." rows="2"></textarea>
+<textarea className="w-full p-3 bg-surface rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest transition-all" id="detalles" placeholder="Indique si requiere envases propios, etiquetas o apoyo regulatorio adicional..." rows={2}></textarea>
 </div>
 {/* Submit Button */}
 <button className="mt-2 w-full min-h-[50px] bg-primary text-on-primary rounded-lg font-label-md text-label-md flex items-center justify-center gap-2 shadow-md hover:bg-primary-container active:scale-[0.99] transition-all" id="submitBtn" type="submit">
