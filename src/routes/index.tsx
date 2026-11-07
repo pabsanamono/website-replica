@@ -1,5 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect } from "react";
+import neutroAsset from "@/assets/galon_neutro_frente.png.asset.json";
+import citrusAsset from "@/assets/galon_citrus_frente.png.asset.json";
+import dorsoAsset from "@/assets/galon_dorso.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -91,16 +94,19 @@ function Index() {
       </p>
 </div>
 {/* Hero Image / Visual Frame */}
-<div className="relative w-full rounded-xl overflow-hidden shadow-md bg-surface-container h-52">
-<img className="w-full h-full object-cover object-center" data-alt="Modern commercial laundry facility in Costa Rica with eco-friendly cleaning detergents, gleaming stainless steel washing drums, pristine white hospitality linens, ambient natural sunlight and subtle eucalyptus botanical accents in warm green and clean white palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdjihp6GPzHJB4pA56SmKAPZ5uk6uVgsQBWOfwkbtfojAtHPT0AC-Kwlgjxef8xo2dGuV8F-hyHUvf-nT3B_w2ShVU97sOJgozwF8T1nJoZa5U5F7u7514v6kuz9uLideTuLmCQ9HuFdrLv_BA8Cynpiw0CTHCKUdA7x9TyWIK3vta5YcuhtCbPUk6s1U1Gdf406DirdbGAZqjMiND-_h5NS0yr2ahjverpO-70uo" />
-<div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent flex items-end p-4">
+<div className="relative w-full rounded-xl overflow-hidden shadow-md bg-gradient-to-b from-surface-container-low to-surface-container h-52">
+<div className="absolute inset-0 flex items-end justify-center gap-2 px-4 max-w-md mx-auto">
+<img className="h-full w-auto object-contain drop-shadow-md" src={neutroAsset.url} alt="Galón EUKAL Detergente Multiusos Súper Concentrado, Aroma Neutro" />
+<img className="h-full w-auto object-contain drop-shadow-md" src={citrusAsset.url} alt="Galón EUKAL Detergente Multiusos Súper Concentrado, Aroma Citrus" />
+</div>
+<div className="absolute inset-0 bg-gradient-to-t from-primary/85 via-primary/25 to-transparent flex items-end p-4">
 <div className="flex items-center justify-between w-full text-on-primary">
 <div className="flex flex-col">
-<span className="font-label-sm text-label-sm text-secondary-fixed">Concentrado Activo 1:20</span>
-<span className="font-headline-sm text-headline-sm font-bold">Rendimiento Institucional</span>
+<span className="font-label-sm text-label-sm text-secondary-fixed">Detergente Multiusos</span>
+<span className="font-headline-sm text-headline-sm font-bold">Súper Concentrado</span>
 </div>
 <span className="bg-surface/20 backdrop-blur-md px-2.5 py-1 rounded text-[12px] font-label-sm font-semibold">
-            pH Neutro 7.0
+            3.785 ml
           </span>
 </div>
 </div>
@@ -305,36 +311,33 @@ function Index() {
 {/* Presentaciones de Producto Industrial */}
 <section className="px-margin py-space-xl flex flex-col gap-space-lg">
 <div className="flex flex-col gap-1">
-<span className="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Formatos de Gran Escala</span>
-<h2 className="font-headline-md text-headline-md text-primary">Presentaciones Profesionales</h2>
-<p className="font-body-sm text-body-sm text-on-surface-variant">Empacados en envases de polietileno de alta densidad (HDPE) 100% reutilizables con precinto de inviolabilidad.</p>
+<span className="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Línea Principal en Galón</span>
+<h2 className="font-headline-md text-headline-md text-primary">Detergente Multiusos Súper Concentrado</h2>
+<p className="font-body-sm text-body-sm text-on-surface-variant">Dos aromas en galón de 3.785 ml — Neutro hipoalergénico y Citrus — con la etiqueta trasera que indica modo de empleo y diluciones.</p>
 </div>
 {/* Product Grid */}
-<div className="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
-{/* Garrafa 20L */}
-<div className="bg-surface-container-lowest rounded-xl p-4 shadow-sm flex flex-col justify-between">
-<div className="flex flex-col gap-3">
-<div className="relative w-full h-44 rounded-lg overflow-hidden bg-surface-container">
-<img className="w-full h-full object-cover" data-alt="Heavy-duty 20 liter industrial cleaning jug with ergonomic handle, matte clean finish, branded EUKAL botanical label, surrounded by freshly laundered white cotton textiles and eucalyptus leaves in commercial setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3v3l-OSUfKx_MGAq78Mwkea-lu38E5VlYMsrmlA2OOhcyEAdCrSUqTiQAbVnlxDHnTiURBp1ddYyFkpy_C-7k1BvO_rsAJAPbXK08d7s3KMzcB0BUPR5QtAHT8h4nFR6EHo6gIyTVmgkfkz-FIVwB7AMIQ05vIfPG5H-H2Irh383oRKj8sWneNHVyJ1nXS0rR33mgMR1qLdZDnUGB26K3hnZKMbsDJnhgsckJxeQ" />
+<div className="grid grid-cols-1 sm:grid-cols-3 gap-space-md">
+{/* Galón Aroma Neutro */}
+<div className="bg-surface-container-lowest rounded-xl p-4 shadow-sm flex flex-col">
+<div className="relative w-full h-44 rounded-lg overflow-hidden bg-gradient-to-b from-surface-container-low to-surface-container">
+<img className="absolute inset-0 w-full h-full object-contain p-2" src={neutroAsset.url} alt="Galón EUKAL Detergente Multiusos Súper Concentrado Aroma Neutro, etiqueta frontal" />
 <div className="absolute top-2 left-2 bg-primary text-on-primary px-2 py-0.5 rounded text-[11px] font-label-sm font-semibold">
-              Mayor Rentabilidad
+              Aroma Neutro
             </div>
 <div className="absolute bottom-2 right-2 bg-surface-container-lowest/90 backdrop-blur-xs px-2 py-0.5 rounded text-[11px] font-code-metric text-primary font-bold">
-              20 Litros / 5.28 Gal
+              3.785 ml
             </div>
 </div>
-<div className="flex flex-col">
-<h3 className="font-headline-sm text-headline-sm text-primary">Garrafa Industrial 20L</h3>
-<p className="font-body-sm text-body-sm text-on-surface-variant mt-1">Ideal para dosificadores automáticos en lavanderías hospitalarias y hoteles de más de 30 habitaciones.</p>
+<div className="flex flex-col pt-3">
+<h3 className="font-headline-sm text-headline-sm text-primary">Galón Neutro Hipoalergénico</h3>
+<p className="font-body-sm text-body-sm text-on-surface-variant mt-1">Sin fragancia añadida: para lavandería hotelera, clínicas y cocinas donde el aroma puede interferir con la ropa de huésped o los alimentos.</p>
 </div>
-{/* Feature Tags */}
-<div className="flex flex-wrap gap-1.5 pt-1">
-<span className="bg-surface-container-high text-primary px-2 py-0.5 rounded-full text-[11px] font-label-sm">Neutro Hipoalergénico</span>
-<span className="bg-secondary-container/40 text-secondary px-2 py-0.5 rounded-full text-[11px] font-label-sm">Citrus Fresh Activo</span>
-<span className="bg-surface-container text-on-surface-variant px-2 py-0.5 rounded-full text-[11px] font-code-metric">Hasta 400 lavados</span>
+<div className="flex flex-wrap gap-1.5 pt-2">
+<span className="bg-surface-container-high text-primary px-2 py-0.5 rounded-full text-[11px] font-label-sm">Biodegradable</span>
+<span className="bg-secondary-container/40 text-secondary px-2 py-0.5 rounded-full text-[11px] font-label-sm">Hipoalergénico</span>
+<span className="bg-surface-container text-on-surface-variant px-2 py-0.5 rounded-full text-[11px] font-code-metric">Súper concentrado</span>
 </div>
-</div>
-<div className="pt-4 flex items-center justify-between">
+<div className="pt-4 mt-auto flex items-center justify-between">
 <div className="flex flex-col">
 <span className="font-label-sm text-[11px] text-on-surface-variant">Tarifa Distribuidor</span>
 <span className="font-headline-sm text-headline-sm text-primary font-bold">Consulte Escalas</span>
@@ -345,36 +348,64 @@ function Index() {
 </a>
 </div>
 </div>
-{/* Pichinga 5L */}
-<div className="bg-surface-container-lowest rounded-xl p-4 shadow-sm flex flex-col justify-between">
-<div className="flex flex-col gap-3">
-<div className="relative w-full h-44 rounded-lg overflow-hidden bg-surface-container">
-<img className="w-full h-full object-cover" data-alt="Compact 5 liter commercial detergent container labeled EUKAL Citrus Fresh on a clean kitchen prep surface, glistening clean tile background, eco-industrial aesthetic in mint green and white lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_ClYEnJw9jvVyC-Gq84NmJLHB1MIkW3PZWa99_DMIqIKM0BF1YUXFwQ9k5BYOBcR3QPiDx7eAwUgKzSf6f7BukRKzt3cnfPNxMsuK-8IYpYrYgFRo97dyroljsjUWTdC34Jkn84m2WOthHzZ6F_QTjjMlWNK-XYKuG0CjmI4YRcl473eUPOi4R72NOjwCC4xM4UyBaCkYam_mzeHC0B7yUM19MX7zIEuwwX3m0Jk" />
+{/* Galón Aroma Citrus */}
+<div className="bg-surface-container-lowest rounded-xl p-4 shadow-sm flex flex-col">
+<div className="relative w-full h-44 rounded-lg overflow-hidden bg-gradient-to-b from-surface-container-low to-surface-container">
+<img className="absolute inset-0 w-full h-full object-contain p-2" src={citrusAsset.url} alt="Galón EUKAL Detergente Multiusos Súper Concentrado Aroma Citrus, etiqueta frontal" />
 <div className="absolute top-2 left-2 bg-secondary text-on-secondary px-2 py-0.5 rounded text-[11px] font-label-sm font-semibold">
-              Uso Liviano / Cocina
+              Aroma Citrus
             </div>
 <div className="absolute bottom-2 right-2 bg-surface-container-lowest/90 backdrop-blur-xs px-2 py-0.5 rounded text-[11px] font-code-metric text-primary font-bold">
-              5 Litros / 1.32 Gal
+              3.785 ml
             </div>
 </div>
+<div className="flex flex-col pt-3">
+<h3 className="font-headline-sm text-headline-sm text-primary">Galón Citrus Fresco</h3>
+<p className="font-body-sm text-body-sm text-on-surface-variant mt-1">Aroma cítrico para pisos duros, vajillas y superficies de cafeterías, restaurantes y áreas comunes de alto tránsito.</p>
+</div>
+<div className="flex flex-wrap gap-1.5 pt-2">
+<span className="bg-surface-container-high text-primary px-2 py-0.5 rounded-full text-[11px] font-label-sm">Biodegradable</span>
+<span className="bg-secondary-container/40 text-secondary px-2 py-0.5 rounded-full text-[11px] font-label-sm">Aroma cítrico</span>
+<span className="bg-surface-container text-on-surface-variant px-2 py-0.5 rounded-full text-[11px] font-code-metric">Súper concentrado</span>
+</div>
+<div className="pt-4 mt-auto flex items-center justify-between">
 <div className="flex flex-col">
-<h3 className="font-headline-sm text-headline-sm text-primary">Pichinga Comercial 5L</h3>
-<p className="font-body-sm text-body-sm text-on-surface-variant mt-1">Formato de fácil manipulación para amas de llaves, cafeterías, spas y desinfección de pisos en clínicas dentales.</p>
-</div>
-{/* Feature Tags */}
-<div className="flex flex-wrap gap-1.5 pt-1">
-<span className="bg-surface-container-high text-primary px-2 py-0.5 rounded-full text-[11px] font-label-sm">Vertedor Antiderrame</span>
-<span className="bg-secondary-container/40 text-secondary px-2 py-0.5 rounded-full text-[11px] font-label-sm">Aroma Botánico Sutil</span>
-<span className="bg-surface-container text-on-surface-variant px-2 py-0.5 rounded-full text-[11px] font-code-metric">Hasta 100 lavados</span>
-</div>
-</div>
-<div className="pt-4 flex items-center justify-between">
-<div className="flex flex-col">
-<span className="font-label-sm text-[11px] text-on-surface-variant">Caja Master</span>
-<span className="font-headline-sm text-headline-sm text-primary font-bold">4 Unidades x Caja</span>
+<span className="font-label-sm text-[11px] text-on-surface-variant">Tarifa Distribuidor</span>
+<span className="font-headline-sm text-headline-sm text-primary font-bold">Consulte Escalas</span>
 </div>
 <a className="h-10 px-4 bg-primary text-on-primary rounded-lg font-label-sm text-label-sm flex items-center gap-1 shadow-sm" href="#lead-sample">
 <span className="">Ficha &amp; Pedido</span>
+<span className="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+</div>
+{/* Etiqueta trasera */}
+<div className="bg-surface-container-lowest rounded-xl p-4 shadow-sm flex flex-col">
+<div className="relative w-full h-44 rounded-lg overflow-hidden bg-gradient-to-b from-surface-container-low to-surface-container">
+<img className="absolute inset-0 w-full h-full object-contain p-2" src={dorsoAsset.url} alt="Etiqueta trasera del galón EUKAL con modo de empleo, precauciones y tabla de dilución" />
+<div className="absolute top-2 left-2 bg-primary-fixed text-primary px-2 py-0.5 rounded text-[11px] font-label-sm font-semibold">
+              Modo de Empleo
+            </div>
+<div className="absolute bottom-2 right-2 bg-surface-container-lowest/90 backdrop-blur-xs px-2 py-0.5 rounded text-[11px] font-code-metric text-primary font-bold">
+              Diluciones impresas
+            </div>
+</div>
+<div className="flex flex-col pt-3">
+<h3 className="font-headline-sm text-headline-sm text-primary">Etiqueta Trasera Técnica</h3>
+<p className="font-body-sm text-body-sm text-on-surface-variant mt-1">Cada galón lleva las diluciones por uso: ropa 20% detergente y 80% agua, platos 15% y manos 10%, más las precauciones de manejo.</p>
+</div>
+<div className="flex flex-wrap gap-1.5 pt-2">
+<span className="bg-surface-container-high text-primary px-2 py-0.5 rounded-full text-[11px] font-label-sm">Tabla de dilución</span>
+<span className="bg-secondary-container/40 text-secondary px-2 py-0.5 rounded-full text-[11px] font-label-sm">Precauciones</span>
+<span className="bg-surface-container text-on-surface-variant px-2 py-0.5 rounded-full text-[11px] font-code-metric">Hecho en Costa Rica</span>
+</div>
+<div className="pt-4 mt-auto flex items-center justify-between">
+<div className="flex flex-col">
+<span className="font-label-sm text-[11px] text-on-surface-variant">Rendimiento por uso</span>
+<span className="font-headline-sm text-headline-sm text-primary font-bold">Calcule su mezcla</span>
+</div>
+<a className="h-10 px-4 bg-primary text-on-primary rounded-lg font-label-sm text-label-sm flex items-center gap-1 shadow-sm" href="#calculadora-dilucion">
+<span className="">Calcular</span>
 <span className="material-symbols-outlined text-[16px]">chevron_right</span>
 </a>
 </div>

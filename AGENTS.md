@@ -28,3 +28,11 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Product photos
+
+When cutting a product photo's background out, composite the original photo's
+pixels through the generated silhouette (`imagegen--edit_image` for the alpha
+mask only, then put that alpha back on the untouched source). Never ship the
+AI-re-drawn version: it garbles the small label text.
+
