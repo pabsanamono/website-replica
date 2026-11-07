@@ -1,8 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect } from "react";
-import neutroAsset from "@/assets/galon_neutro_frente.jpg.asset.json";
-import citrusAsset from "@/assets/galon_citrus_frente.jpg.asset.json";
-import dorsoAsset from "@/assets/galon_dorso.jpg.asset.json";
+import neutroAsset from "@/assets/galon_neutro_frente.png.asset.json";
+import citrusAsset from "@/assets/galon_citrus_frente.png.asset.json";
+import dorsoAsset from "@/assets/galon_dorso.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({

@@ -1,8 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect } from "react";
-import neutroAsset from "@/assets/galon_neutro_frente.jpg.asset.json";
-import citrusAsset from "@/assets/galon_citrus_frente.jpg.asset.json";
-import dorsoAsset from "@/assets/galon_dorso.jpg.asset.json";
+import neutroAsset from "@/assets/galon_neutro_frente.png.asset.json";
+import citrusAsset from "@/assets/galon_citrus_frente.png.asset.json";
+import dorsoAsset from "@/assets/galon_dorso.png.asset.json";
 
 export const Route = createFileRoute("/maquila")({
   head: () => ({
@@ -199,15 +199,15 @@ function Maquila() {
 <span className="font-label-sm text-label-sm text-on-surface font-semibold">Línea actual en galón 3.785 ml</span>
 <div className="grid grid-cols-3 gap-space-xs">
 <div className="rounded-lg bg-surface-container overflow-hidden flex flex-col">
-<img className="w-full h-24 object-contain p-1" src={neutroAsset.url} alt="Galón EUKAL Aroma Neutro, etiqueta frontal" />
+<img className="w-full h-32 object-contain p-2" src={neutroAsset.url} alt="Galón EUKAL Aroma Neutro, etiqueta frontal" />
 <span className="block text-center font-label-sm text-[11px] text-on-surface-variant pb-1">Aroma Neutro</span>
 </div>
 <div className="rounded-lg bg-surface-container overflow-hidden flex flex-col">
-<img className="w-full h-24 object-contain p-1" src={citrusAsset.url} alt="Galón EUKAL Aroma Citrus, etiqueta frontal" />
+<img className="w-full h-32 object-contain p-2" src={citrusAsset.url} alt="Galón EUKAL Aroma Citrus, etiqueta frontal" />
 <span className="block text-center font-label-sm text-[11px] text-on-surface-variant pb-1">Aroma Citrus</span>
 </div>
 <div className="rounded-lg bg-surface-container overflow-hidden flex flex-col">
-<img className="w-full h-24 object-contain p-1" src={dorsoAsset.url} alt="Etiqueta trasera del galón EUKAL con modo de empleo y tabla de dilución" />
+<img className="w-full h-32 object-contain p-2" src={dorsoAsset.url} alt="Etiqueta trasera del galón EUKAL con modo de empleo y tabla de dilución" />
 <span className="block text-center font-label-sm text-[11px] text-on-surface-variant pb-1">Etiqueta trasera</span>
 </div>
 </div>
