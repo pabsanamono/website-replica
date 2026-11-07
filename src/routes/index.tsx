@@ -402,7 +402,7 @@ function Index() {
 <div className="pt-4 mt-auto flex items-center justify-between">
 <div className="flex flex-col">
 <span className="font-label-sm text-[11px] text-on-surface-variant">Rendimiento por uso</span>
-<span className="font-headline-sm text-headline-sm text-primary font-bold">Calcule su mez</span>
+<span className="font-headline-sm text-headline-sm text-primary font-bold">Calcule su mezcla</span>
 </div>
 <a className="h-10 px-4 bg-primary text-on-primary rounded-lg font-label-sm text-label-sm flex items-center gap-1 shadow-sm" href="#calculadora-dilucion">
 <span className="">Calcular</span>
