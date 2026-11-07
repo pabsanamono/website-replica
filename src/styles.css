@@ -133,6 +133,10 @@
   --text-body-lg--letter-spacing: 0em;
   --text-body-lg--font-weight: 400;
   --color-white: #ffffff;
+  --color-primary-foreground: var(--on-primary);
+  --color-muted-foreground: var(--on-surface-variant);
+  --color-accent: var(--surface-container);
+  --color-input: var(--outline-variant);
   --color-foreground: var(--on-surface);
   --color-border: var(--outline-variant);
 }
