@@ -112,7 +112,7 @@ function Index() {
 <span className="">Quiero ser Distribuidor</span>
 </a>
 <a className="w-full sm:w-auto h-12 px-6 bg-tertiary-fixed text-on-tertiary-fixed-variant rounded-lg font-label-md text-label-md flex items-center justify-center gap-2 shadow-sm hover:brightness-105 transition-all" href="#calculadora-dilucion">
-<span className="material-symbols-outlined text-[20px]" style={{"fontVariationSettings": ""FILL" 1"}}>calculate</span>
+<span className="material-symbols-outlined text-[20px]" style={{"fontVariationSettings": '"FILL" 1'}}>calculate</span>
 <span className="">Calcular Dilución y Ahorro</span>
 </a>
 </div>
